@@ -57,19 +57,5 @@
 <!--BOTONES Y AREA DONDE SE DESPLIEGA LA INFO O NO-->
     
     
-<!--COLUMNAS DE LA BASE A DESPLEGAR-->    
-    
-    
-    <!--
-    <nav class="navbar navbar-expand-md bg-info navbar-info fixed-bottom">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="limpiar.php">Limpiar Registros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="generar.php">Generar base de contacto</a>
-        </li>
-      </ul>
-    </nav> -->
 </body>
 </html>
