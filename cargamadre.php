@@ -1,6 +1,7 @@
 <?php
 include __DIR__ . '/db_connect.php';
-$nombretabla = $_POST['nombrebdmadre'];
+$nombre = $_POST['nombrebdmadre'];
+$nombretabla = "6090".$nombre;
 
 
 if(isset($_POST['import_data']))
@@ -30,10 +31,10 @@ if(isset($_POST['import_data']))
                         tp varchar(10),
                         cel varchar(10),
                         nombre varchar(80),
-                        total varchar(10),
-                        act varchar(10),
-                        s30 varchar(10),
-                        pena varchar(10),
+                        total varchar(30),
+                        act varchar(30),
+                        s30 varchar(30),
+                        pena varchar(30),
                         minimo varchar(4),
                         tel_1 varchar(10),
                         tel_2 varchar(10),

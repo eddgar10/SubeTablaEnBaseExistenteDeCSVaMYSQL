@@ -27,31 +27,47 @@
 </nav>
     <!--FIN BARRA SUPERIOR DE MENU-->
     
-<!--BOTONES Y AREA DONDE SE DESPLIEGA LA INFO O NO-->
-<!--<div class="container-fluid p-5 my-0 bg-dark text-white">-->   
-    
+<!--BOTONES Y AREA DONDE SE DESPLIEGA LA INFO O NO-->    
     
     <div class="container-fluid p-4 my-3 text-black">        
         <div class="d-flex" id="wrapper"></div>
         <div class="row">
             <div class="col">
             <form action="cargamadre.php" method="post" enctype="multipart/form-data" id="import_form">
-                <div><input type="text" class="form-control" "form-control-lg" name="nombrebdmadre" id="input1" placeholder="nombre de base madre" required> 
+                <div><input type="text" class="form-control" "form-control-lg" name="nombrebdmadre" id="input1" placeholder="nombre de tabla madre" required> 
                 </div>
                 <div class="col-md-3">
                     <input type="file" name="file" />        
                 </div>
                 <div class="col-md-3">
-                    <input type="submit" class="btn btn-dark btn-sm" name="import_data" value="Cargar Base Madre">
+                    <input type="submit" class="btn btn-dark btn-sm" name="import_data" value="Cargar Tabla Madre">
                 </div>
-            </form>
+            </form> 
             </div>
             <div class="col">
-                 <textarea class="form-control" id="textoresultadocarga" rows="3" readonly></textarea>
+                 <div class="form-group">
+  
+  <textarea class="form-control" rows="3" id="comment" disabled>PENDIENTE INFO A DESPLEGAR PUEDEN SER CARACTERISTICAS DE TABLA O DESCRIPCION DE FUNCION QUE REALIZA DICHO BOTON</textarea>
+</div> 
+                     <?/*
+                     //CONSULTA DE TABLAS EXISTENTES EN BASE DE DATOS   
+                     include __DIR__ . '/db_connect.php';
+
+                        $consulta="SHOW TABLES FROM $dbname";
+                        $result=  mysqli_query($conn,$consulta);
+                        $row = mysqli_fetch_assoc($result);
+                        foreach($row as $value)
+                            {   //PARA EXTRAER EL NUMERO DE REGISTROS CONTENIDOS EN LA TABLA OBTENIDA POR LA CONSULTA ANTERIOR
+                                echo"Se agrego la tabla $value a la BD $dbname";   
+                            }
+                     */?>
+
             </div>
         </div>
     </div>
     
+     
+        
     
     
 <!--BOTONES Y AREA DONDE SE DESPLIEGA LA INFO O NO-->
