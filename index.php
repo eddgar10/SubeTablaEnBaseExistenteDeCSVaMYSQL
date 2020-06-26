@@ -1,7 +1,13 @@
+<!--
+SE ELIMINA ENCABELZADO DE COLUMNAS
+
+SE ELIMINAN FILAS EN BLANCO PARA EVITAR ERROR EN CARGA HACIA MYSQL
+-->
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Crear BD y cargar</title>
+    <title>Limpia filas vacias completas</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -33,7 +39,7 @@
         <div class="d-flex" id="wrapper"></div>
         <div class="row">
             <div class="col">
-            <form action="cargamadre.php" method="post" enctype="multipart/form-data" id="import_form">
+            <form action="cargamadre6090.php" method="post" enctype="multipart/form-data" id="import_form">
                 <div><input type="text" class="form-control" "form-control-lg" name="nombrebdmadre" id="input1" placeholder="nombre de tabla madre" required> 
                 </div>
                 <div class="col-md-3">
